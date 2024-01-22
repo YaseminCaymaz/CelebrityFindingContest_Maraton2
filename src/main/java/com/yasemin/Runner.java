@@ -21,14 +21,11 @@ public class Runner {
 //           createRepo.createCelebrity();
        startCompetition();
     }
-    private static CelebrityController celebrityController;
-    private static ContestController contestController;
-    private static ContestantController contesttantController;
+    public static CelebrityController celebrityController;
+    public static ContestController contestController;
+    public static ContestantController contesttantController;
 
     public static void startCompetition() {
-        contesttantController = new ContestantController();
-        contestController = new ContestController();
-        celebrityController = new CelebrityController();
         Contestant contestant = kayit();
         Scanner sc = new Scanner(System.in);
         AtomicInteger sayac = new AtomicInteger(0);
