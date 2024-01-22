@@ -21,9 +21,9 @@ public class Runner {
 //           createRepo.createCelebrity();
        startCompetition();
     }
-    public static CelebrityController celebrityController;
-    public static ContestController contestController;
-    public static ContestantController contesttantController;
+    public static CelebrityController celebrityController=  new CelebrityController();
+    public static ContestController contestController= new ContestController();
+    public static ContestantController contesttantController=new ContestantController();
 
     public static void startCompetition() {
         Contestant contestant = kayit();
